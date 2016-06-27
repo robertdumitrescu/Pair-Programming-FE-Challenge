@@ -1,1 +1,15 @@
-<h1>Listing</h1>
+<section class="listing-view">
+  <h1>Listing</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="col-sm-4">First Name:</h3>
+      <h3 class="col-sm-4">Last Name:</h3>
+      <h3 class="col-sm-4">E-mail:</h3>
+    </div>
+    <div class="" ng-repeat="user in UserList">
+      <h4 class="col-sm-4">{{user.firstName}}</h4>
+      <h4 class="col-sm-4">{{user.lastName}}</h4>
+      <h4 class="col-sm-4">{{user.email}}</h4>
+    </div>
+  </div>
+</section>
