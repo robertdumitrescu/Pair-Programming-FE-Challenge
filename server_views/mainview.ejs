@@ -1,0 +1,63 @@
+<html ng-app="BoilerPlateApp">
+<head>
+
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/mainviewdist.css">
+
+<!--FavIcon-->
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+
+<!-- SEO friendly tags -->
+<title>
+    Robert Dumitrescu - Portfolio and resume
+</title>
+<base href="/">
+
+</head>
+
+<body>
+<!--NG View Implemntation -->
+
+<div ng-controller="MainController" class="page-wrap">
+    <a href="javascript:void(0)" ng-click="goToUrl('/users')">
+        Listing
+    </a>
+    <a href="javascript:void(0)" ng-click="goToUrl('users/add')">
+        Add
+    </a>
+
+    <div class="container-fluid">
+        <div class="row main-page-wrapper">
+            <div class="col-xs-12">
+                <div ng-view>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Vendor scripts -->
+<script src="vendor_components/vendorComponentsScripts.js"></script>
+
+<!-- Generic Angular scripts -->
+<script src="app/app.init.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/app.routes.js"></script>
+<script src="app/app.main.Controller.js"></script>
+
+<!-- Components -->
+<script src="app/components/users/add/add.Controller.js"></script>
+<script src="app/components/users/add/add.Service.js"></script>
+
+<script src="app/components/users/listing/listing.Controller.js"></script>
+<script src="app/components/users/listing/listing.Service.js"></script>
+
+</body>
+</html>

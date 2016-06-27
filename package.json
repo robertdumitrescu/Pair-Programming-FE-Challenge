@@ -1,0 +1,26 @@
+{
+  "name": "pair-programming-fe-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/robertdum01/boilerplate-nodejs-angularjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/robertdum01/boilerplate-nodejs-angularjs#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
+  }
+}
