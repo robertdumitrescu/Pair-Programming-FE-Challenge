@@ -1,0 +1,21 @@
+{
+  "success" : true,
+  "error" : null,
+  "data" : [
+    {
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "e-mail" : "john@doe.com"
+    },
+    {
+      "firstName" : "Adrian",
+      "lastName" : "Usman",
+      "e-mail" : "Adrian@Usman.com"
+    },
+    {
+      "firstName" : "George",
+      "lastName" : "Clooney",
+      "e-mail" : "George@Clooney.com"
+    }
+  ]
+}

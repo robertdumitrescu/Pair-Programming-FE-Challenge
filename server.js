@@ -10,8 +10,8 @@ var path = require('path');
 var bodyParser = require('body-parser');
 
 
-var apiController = require('./server_controllers/api.Controller.js');
-var StaticsController = require('./server_controllers/statics.Controller.js');
+var apiController = require('./server/controllers/api.Controller.js');
+var StaticsController = require('./server/controllers/statics.Controller.js');
 
 var app = express();
 
@@ -22,7 +22,7 @@ global.appRoot = path.resolve(__dirname);
 app.use(express.static(__dirname + '/public'));
 
 // set the view engine to ejs
-app.set('views','./server_views');
+app.set('views','./views');
 app.set('view engine', 'ejs');
 
 
