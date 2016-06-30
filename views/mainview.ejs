@@ -1,5 +1,5 @@
 <html ng-app="BoilerPlateApp">
-<head>
+<head ng-controller="SeoController">
 
     <!-- Stylesheets -->
 
@@ -13,8 +13,28 @@
 
 <!-- SEO friendly tags -->
 <title>
-    Pair Programming FE Challenge
+    {{number}}
 </title>
+
+    <meta name="description"
+          content="{{number}}">
+    <!-- Facebook sharing tags -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{number}}">
+    <meta property="og:description"
+          content="{{number}}">
+
+    <meta property="og:site_name" content="{{number}}">
+    <meta property="og:image" content="{{number}}">
+
+    <!-- Twitter sharing tags -->
+    <meta name="twitter:title" content="{{number}}">
+    <meta name="twitter:description"
+          content="{{number}}">
+    <meta name="twitter:image" content="{{number}}">
+    <meta name="twitter:creator" content="@robertdum01">
+
 <base href="/">
 
 </head>
@@ -51,6 +71,7 @@
 <script src="app/app.config.js"></script>
 <script src="app/app.routes.js"></script>
 <script src="app/app.main.Controller.js"></script>
+<script src="app/app.seo.Controller.js"></script>
 
 <!-- Components -->
 <script src="app/components/users/add/add.Controller.js"></script>
