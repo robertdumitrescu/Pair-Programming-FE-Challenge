@@ -5,17 +5,17 @@
     {
       "firstName" : "John",
       "lastName" : "Doe",
-      "e-mail" : "john@doe.com"
+      "email" : "john@doe.com"
     },
     {
       "firstName" : "Adrian",
       "lastName" : "Usman",
-      "e-mail" : "Adrian@Usman.com"
+      "email" : "Adrian@Usman.com"
     },
     {
       "firstName" : "George",
       "lastName" : "Clooney",
-      "e-mail" : "George@Clooney.com"
+      "email" : "George@Clooney.com"
     }
   ]
 }
