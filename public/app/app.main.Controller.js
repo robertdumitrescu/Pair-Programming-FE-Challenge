@@ -5,5 +5,7 @@ app.controller("MainController", function ($rootScope, $timeout, $location) {
         $location.path(targetRoute);
 
     };
+    
+    $rootScope.users = [];
 
 });
