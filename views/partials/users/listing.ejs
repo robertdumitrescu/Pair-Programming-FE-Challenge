@@ -1,1 +1,18 @@
 <h1>Listing</h1>
+<div class="form-group">
+    <label for="firstname">Search </label>
+    <input type="text" class="form-control" placeholder="search by..." ng-model="searchCriteria">
+</div>
+<table class="table table-condensed">
+    <tr>
+        <td class="active">First name</td>
+        <td class="active">Last name</td>
+        <td class="active">Email</td>
+    </tr>
+    <tr ng-repeat="user in list | filter : searchCriteria">
+        <td class="active">{{user.firstname}}</td>
+        <td class="active">{{user.lastname}}</td>
+        <td class="active">{{user.email}}</td>
+    </tr>
+
+</table>

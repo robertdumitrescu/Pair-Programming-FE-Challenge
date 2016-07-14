@@ -1,1 +1,16 @@
-<h1>ADD</h1>
+<form>
+    <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="firstname" class="form-control" id="firstname" placeholder="First Name" ng-model="user.firstname">
+    </div>
+    <div class="form-group">
+    <label for="lastname">Last Name</label>
+    <input type="lastname" class="form-control" id="lastname" placeholder="Last Name" ng-model="user.lastname">
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" ng-model="user.email">
+    </div>
+
+    <button type="submit" class="btn btn-default" ng-click="save()">Save</button>
+</form>
